@@ -1,0 +1,439 @@
+body {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+}
+
+/*HOW-TO-SECTION*/
+
+
+.How-To-Section, .USP-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+
+}
+
+.Headline {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.How-To-Grid, .USP-Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4%;
+}
+
+.How-To {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.How-To-Headline, .USP-Headline {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.How-To-Text, .USP-Text {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.How-To-CTA, .USP-CTA {
+    display: flex;
+    align-items: center;
+}
+
+.How-To-CTA div, .USP-CTA div {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 6px;
+    color: #0282c2;
+}
+
+.How-To-CTA i, .USP-CTA i  {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0282c2;
+    padding-top: 2px;
+}
+
+.How-To-CTA:hover,.USP-CTA:hover  {
+    text-decoration: underline;
+    text-decoration-color: #0282c2;
+}
+
+@media screen and (max-width: 720px) {
+
+    .How-To-Grid, .USP-Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4%;
+        row-gap: 5%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .How-To-Grid, .USP-Grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 4%;
+        row-gap: 5%;
+    }
+
+}
+
+/*EXPLAIN & SUPPORT SECTION*/
+
+
+.Explain-Section, .Support-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.Explain-Section-Container, .Support-Section-Container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Explain-Section-content, .Support-Section-content {
+    margin-right: 50px;
+    max-width: 500px;
+   
+}
+
+.Explain-Headline, .Support-Headline {
+    margin-bottom: 20px;
+}
+
+.Explain-Text, .Support-Text {
+    margin-bottom: 20px;
+}
+
+.Explain-picture, .Support-picture {
+    display: flex;
+    flex: 1;
+    height: 500px;
+    justify-content: flex-end;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .Explain-picture, .Support-picture {
+    height: 400px;
+} 
+}
+
+@media screen and (max-width: 900px) {
+
+    .Explain-picture, .Support-picture {
+    height: 320px;
+} 
+}
+
+@media screen and (max-width: 700px) {
+
+
+    .Explain-Section-Container, .Support-Section-Container {
+        flex-direction: column-reverse;
+    }
+
+    .Explain-Section-content, .Support-Section-content {
+        text-align: center;
+        margin-right: 0;
+       
+    }
+    
+    .Explain-picture, .Support-picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        margin: 0;
+
+    }
+
+    .Explain-picture img, .Support-picture img{
+        height: 350px;
+    }
+    
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .Explain-Section-Container, .Support-Section-Container {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .Explain-Section-content, .Support-Section-content {
+        text-align: center;
+       
+    }
+    
+    .Explain-picture, .Support-picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+    }
+
+    .Explain-picture img, .Support-picture img{
+        height: 250px;
+    }
+    
+
+}
+
+
+/*USP-SECTION*/
+
+
+.USP {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.15);
+}
+
+.USP-Image {
+    padding: 0;
+    height: 150px;
+    background-color: antiquewhite;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.USP-Icon {
+    font-size: 30px;
+    color: orange;
+}
+
+.USP-Content-Container {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+/*BANNER*/
+
+
+.CTA-Banner-Section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.CTA-Banner {
+    background-color: antiquewhite;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.CTA-Headline {
+    width: 70%;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.button-banner-section {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-banner-section .Main-CTA {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    white-space: nowrap;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .CTA-Headline {
+        width: 70%;
+        font-size: 22px;
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .CTA-Headline {
+        width: 70%;
+        font-size: 22px;
+        font-weight: 700;
+        margin-right: 15px;
+    }
+
+    .CTA-Banner {
+        background-color: antiquewhite;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .CTA-Headline {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+}
+
+/*FOOTER*/
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+}
+
+.Footer-Text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text-Footer-Nav {
+    margin-right: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Text-Footer-Nav:hover {
+    text-decoration: underline;
+}
+
+
+.WhatsApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhatsApp img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .Footer-Text {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .Footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Text-Footer-Nav {
+        margin-right: 10px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .WhatsApp img {
+        height: 20px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 50px;
+    }
+    
+    .Footer-nav {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+   
+
+}
+
+
