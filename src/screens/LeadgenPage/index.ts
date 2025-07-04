@@ -1,0 +1,1 @@
+export { LeadgenPage } from "./LeadgenPage";
